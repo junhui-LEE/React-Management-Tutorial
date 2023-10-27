@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CustomerAdd from './components/CustomerAdd';
 import './App.css';
 import Customer from './components/Customer'
 import Paper from '@material-ui/core/Paper';
@@ -53,6 +54,7 @@ class App extends Component {
   render() {
     const { classes } = this.props;
     return (
+      <div>
         <Paper className={classes.root}>
           <Table className={classes.table}>
             <TableHead>
@@ -78,6 +80,8 @@ class App extends Component {
             </TableBody>
           </Table>
         </Paper>
+        <CustomerAdd />
+      </div>  
     );
   }
 }
